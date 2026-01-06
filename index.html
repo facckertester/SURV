@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <title>Crimson Survivor</title>
+    
+    <!-- UnoCSS Runtime CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@unocss/runtime"></script>
+    <script>
+      window.__unocss = {
+        theme: {
+          fontFamily: {
+            sans: 'Inter, sans-serif',
+            serif: 'Cinzel, serif',
+          }
+        }
+      }
+    </script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      body { font-family: 'Inter', sans-serif; user-select: none; }
+      .fantasy-font { font-family: 'Cinzel', serif; }
+      canvas { display: block; }
+      
+      /* Custom animations */
+      @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+      .animate-float { animation: float 3s ease-in-out infinite; }
+      @keyframes shake { 0%, 100% { transform: rotate(-3deg); } 50% { transform: rotate(3deg); } }
+      .animate-shake { animation: shake 0.5s ease-in-out infinite; }
+      @keyframes beam { 0% { opacity: 0; transform: scale(0.5); } 50% { opacity: 1; } 100% { opacity: 0; transform: scale(1.5); } }
+      .animate-beam { animation: beam 2s infinite; }
+    </style>
+
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "vite": "https://esm.sh/vite@^7.3.0",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2"
+  }
+}
+</script>
+  <script type="module" crossorigin src="./assets/index-eiv5QFx2.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-JWrjvAeh.css">
+</head>
+  <body class="bg-slate-900 text-white overflow-hidden">
+    <div id="root"></div>
+  </body>
+</html>
